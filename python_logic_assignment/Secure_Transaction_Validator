@@ -1,0 +1,12 @@
+Account_bal=int(input("Enter Account Bal:"))
+Withdrawal_Amt=int(input("Enter Withdrawal Amount:"))
+verification_status=input("Verified(True/False):").strip().lower()
+if verification_status == "true":
+        verified = True
+elif verification_status == "false":
+        verified = False
+        
+if verified==True and Withdrawal_Amt<=Account_bal:
+    print("Withdrawal Successful")
+else:
+    print("Transaction denied") 
